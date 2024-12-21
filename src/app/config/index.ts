@@ -4,6 +4,7 @@ import path from 'path';
 dotenv.config({ path: path.join((process.cwd(), '.env')) });
 
 export default {
+  frontEnd_url: process.env.FRONTEND_URL,
   NODE_ENV: process.env.NODE_ENV,
   port: process.env.PORT,
   database_url: process.env.DATABASE_URL,
